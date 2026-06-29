@@ -1,50 +1,12 @@
-   0.041613000s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint: fingerprint error for ring-a-ding-ding v0.1.0 (/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend)/Check { test: false }/TargetInner { name: "ring-a-ding-ding", doc: true, ..: with_path("/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend/src/main.rs", Edition2024) }
-   0.041632958s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend/target/debug/.fingerprint/ring-a-ding-ding-5983da27e3aa41cb/bin-ring-a-ding-ding`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::backtrace::Backtrace>::create
-   1: cargo_util::paths::read_bytes
-   2: cargo_util::paths::read
-   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   4: cargo::core::compiler::fingerprint::prepare_target
-   5: cargo::core::compiler::compile
-   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   7: cargo::ops::cargo_compile::compile_ws
-   8: cargo::ops::cargo_compile::compile_with_exec
-   9: cargo::ops::cargo_compile::compile
-  10: cargo::commands::check::exec
-  11: <cargo::cli::Exec>::exec
-  12: cargo::main
-  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  14: std::rt::lang_start::<()>::{closure#0}
-  15: std::rt::lang_start_internal
-  16: _main
-   0.054003208s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint: fingerprint error for ring-a-ding-ding v0.1.0 (/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend)/Check { test: true }/TargetInner { name: "ring-a-ding-ding", doc: true, ..: with_path("/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend/src/main.rs", Edition2024) }
-   0.054008666s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend/target/debug/.fingerprint/ring-a-ding-ding-fdfbacc211bb4972/test-bin-ring-a-ding-ding`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: <std::backtrace::Backtrace>::create
-   1: cargo_util::paths::read_bytes
-   2: cargo_util::paths::read
-   3: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   4: cargo::core::compiler::fingerprint::prepare_target
-   5: cargo::core::compiler::compile
-   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   7: cargo::ops::cargo_compile::compile_ws
-   8: cargo::ops::cargo_compile::compile_with_exec
-   9: cargo::ops::cargo_compile::compile
-  10: cargo::commands::check::exec
-  11: <cargo::cli::Exec>::exec
-  12: cargo::main
-  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  14: std::rt::lang_start::<()>::{closure#0}
-  15: std::rt::lang_start_internal
-  16: _main
-    Checking ring-a-ding-ding v0.1.0 (/Users/ian/Desktop/Development/rust/ring-a-ding-ding/backend)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.09s
+   0.031130000s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint: stale: changed "/home/batman/workspace/ring-a-ding-ding/backend/src/main.rs"
+   0.031156262s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:           (vs) "/home/batman/workspace/ring-a-ding-ding/backend/target/debug/.fingerprint/ring-a-ding-ding-94cabdda225db4bd/dep-bin-ring-a-ding-ding"
+   0.031162898s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1782703255, nanos: 255290879 } < FileTime { seconds: 1782703257, nanos: 835076390 }
+   0.031236306s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint: fingerprint dirty for ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend)/Check { test: false }/TargetInner { name: "ring-a-ding-ding", doc: true, ..: with_path("/home/batman/workspace/ring-a-ding-ding/backend/src/main.rs", Edition2024) }
+   0.031249787s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/batman/workspace/ring-a-ding-ding/backend/target/debug/.fingerprint/ring-a-ding-ding-94cabdda225db4bd/dep-bin-ring-a-ding-ding", reference_mtime: FileTime { seconds: 1782703255, nanos: 255290879 }, stale: "/home/batman/workspace/ring-a-ding-ding/backend/src/main.rs", stale_mtime: FileTime { seconds: 1782703257, nanos: 835076390 } }))
+   0.033421323s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint: stale: changed "/home/batman/workspace/ring-a-ding-ding/backend/src/main.rs"
+   0.033428936s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:           (vs) "/home/batman/workspace/ring-a-ding-ding/backend/target/debug/.fingerprint/ring-a-ding-ding-c76b4e25e1e4b578/dep-test-bin-ring-a-ding-ding"
+   0.033434593s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1782703255, nanos: 255290879 } < FileTime { seconds: 1782703257, nanos: 835076390 }
+   0.033471682s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint: fingerprint dirty for ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend)/Check { test: true }/TargetInner { name: "ring-a-ding-ding", doc: true, ..: with_path("/home/batman/workspace/ring-a-ding-ding/backend/src/main.rs", Edition2024) }
+   0.033480692s  INFO prepare_target{force=false package_id=ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend) target="ring-a-ding-ding"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/batman/workspace/ring-a-ding-ding/backend/target/debug/.fingerprint/ring-a-ding-ding-c76b4e25e1e4b578/dep-test-bin-ring-a-ding-ding", reference_mtime: FileTime { seconds: 1782703255, nanos: 255290879 }, stale: "/home/batman/workspace/ring-a-ding-ding/backend/src/main.rs", stale_mtime: FileTime { seconds: 1782703257, nanos: 835076390 } }))
+    Checking ring-a-ding-ding v0.1.0 (/home/batman/workspace/ring-a-ding-ding/backend)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
